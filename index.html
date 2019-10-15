@@ -1,10 +1,13 @@
 <html>
   <script type="text/javascript">
-    window.onload=function(){
-  document.getElementById("linkid").click();
+function iframeclick() {
+document.getElementById("theiframe").contentWindow.document.body.onclick = function() {
+        document.getElementById("theiframe").contentWindow.location.reload();
+    }
+}
 };
   </script>
 <div text-align: center>
 <h1>hello</h1>
-<iframe id="linkid" width="110" height="200" src="https://www.myinstants.com/instant/ear-rape-girl-moans-78201/embed/" frameborder="0" scrolling="no"></iframe>
+<iframe id="theiframe" onload="iframeclick()" width="110" height="200" src="https://www.myinstants.com/instant/ear-rape-girl-moans-78201/embed/" frameborder="0" scrolling="no"></iframe>
   </html>
